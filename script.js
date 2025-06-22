@@ -4,8 +4,6 @@ const misc = document.querySelector(".misc");
 const pun = document.querySelector(".pun");
 const dark = document.querySelector(".dark");
 const christmas = document.querySelector(".christmas");
-const spooky = document.querySelector(".Spooky");
-const submitBtn = document.querySelector(".submit-btn");
 const joke = document.getElementById("joke");
 
 async function fetchJoke(category = "Any", event) {
@@ -32,5 +30,3 @@ misc.addEventListener("click", (e) => fetchJoke("Misc", e));
 pun.addEventListener("click", (e) => fetchJoke("Pun", e));
 dark.addEventListener("click", (e) => fetchJoke("Dark", e));
 christmas.addEventListener("click", (e) => fetchJoke("Christmas", e));
-spooky.addEventListener("click", (e) => fetchJoke("Spooky", e));
-submitBtn.addEventListener("click", (e) => e.preventDefault());
